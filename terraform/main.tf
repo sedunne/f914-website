@@ -41,7 +41,7 @@ resource "digitalocean_app" "f914-website" {
       environment_slug = "html"
       github {
         branch         = "main"
-        deploy_on_push = false
+        deploy_on_push = true
         repo           = "sedunne/f914-website"
       }
       routes {
